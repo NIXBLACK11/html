@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <title>alignment</title>
+    <style>
+        *{
+
+        }
+        p,h1{
+            text-align: center;
+            text-align: justify;
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            width:900px;
+            border:3px solid purple;
+            margin: 33px auto;
+        }
+        .item{
+            border:3px solid grey;
+            margin :12px 3px;
+            padding:12px 3px;
+            background-color: royalblue;
+        }
+        #fruits{
+            float:left;
+            width :50%;
+        }
+        #computer{
+            float:left;
+            width :50%;
+        }
+        /* if left elements overlap clear:left;
+        clear:both; for both sides */
+        #stationary{
+            float:left;
+            width :50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit officia saepe perspiciatis, nesciunt beatae expedita, sit voluptatem veniam explicabo quaerat, ducimus nostrum! Placeat sed inventore, commodi obcaecati explicabo perferendis eos ea ipsa expedita!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit officia saepe perspiciatis, nesciunt beatae expedita, sit voluptatem veniam explicabo quaerat, ducimus nostrum! Placeat sed inventore, commodi obcaecati explicabo perferendis eos ea ipsa expedita!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit officia saepe perspiciatis, nesciunt beatae expedita, sit voluptatem veniam explicabo quaerat, ducimus nostrum! Placeat sed inventore, commodi obcaecati explicabo perferendis eos ea ipsa expedita!</p>
+        </div>
+    </div>
+</body>
+</html>

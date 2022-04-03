@@ -1,0 +1,79 @@
+/* CSS RESET */
+*{
+    margin:0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+#navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    top:0px;
+}
+
+/* navbar:logo,image */
+#logo{
+    margin:22px 25px;
+    width:10%;
+}
+#logo img{
+    height:100px;
+    border-radius: 100px;
+}
+/* NAVBAR LIST */
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:10%;
+    z-index:-1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+    width: 10%;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding: 3px 5px;
+    margin:50px 3px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* home */
+#home{
+    position: absolute;
+    align-items: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('back.png') no-repeat center center/cover;
+    position:absolute;
+    top:0px;left:0px;
+    height:642px;
+    width:100%;
+    z-index:-1;
+    opacity:1;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}

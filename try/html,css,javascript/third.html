@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        /* margin outside border padding inside border */
+        *{
+            /* aplicable to all but can be overridden */
+            margin:0px;
+        }
+        body{
+            background-color:cyan;
+        }
+        .container{
+            background-color:rebeccapurple;
+            border: 3px solid red;
+            padding: 9px;
+            margin:30px;
+            border-radius: 20px;
+            width: 690px;
+            height: 100px;
+            box-sizing: border-box;
+            /* use box sizing if you want the width and height of the box to remain constant */
+            /* padding-bottom:9px;
+            padding-bottom:69px;
+            padding-bottom:6px;
+            padding-bottom:67px;
+            can also b set by
+            padding:top right left bottom;
+            padding:23px 56px 40px 56px;
+            padding:45px 60px;(for top/bottom   left/right)
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequuntur mollitia vel, quibusdam cum adipisci non animi, perspiciatis tenetur debitis dolor, et qui quo. Nihil adipisci neque ab id soluta.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequuntur mollitia vel, quibusdam cum adipisci non animi, perspiciatis tenetur debitis dolor, et qui quo. Nihil adipisci neque ab id soluta.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequuntur mollitia vel, quibusdam cum adipisci non animi, perspiciatis tenetur debitis dolor, et qui quo. Nihil adipisci neque ab id soluta.</p>
+    </div>
+</body>
+</html>

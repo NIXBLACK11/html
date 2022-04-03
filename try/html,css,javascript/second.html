@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <!-- in text css -->
+    <!-- id is unique-->
+    <!-- class can be used in all -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <style>
+        .redElement{
+            /* color:red; */
+            color:rgb(4, 69, 20);
+        }
+        .bgBlue{
+            background-color:blue;
+            height: 100px;
+            width: 100px;
+        }
+        #unique{
+            background-color:blueviolet;
+        }
+        span,footer{
+            /* border-color: rebeccapurple;
+            border-style: solid;
+            border-width: 4px; */
+            /* isko ek line me bhi likh sakte hai */
+            /* border-top: 2px solid yellow;  isko sare side ke lie use kar sakte hai */
+            /* border-bottom-left-radius: 36px; ise har corner ka radius ko change kar sakte hai */
+            border: 4px solid rebeccapurple;
+            border-radius: 10px;
+            background-color:yellow;
+            font-family: 'Comforter Brush';
+            font-size: 20px;
+            line-height: 8.3em;
+        }
+        .backgroundimage{
+            background-image: url('html,css,javascript\logo.png');
+            /* background-repeat:repeat-y;
+            background-repeat:repeat-x;
+            background-repeat:no-repeat;
+            to set different types of repeat in the image */
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS SELECTORS</h3>
+    <p id="unique">first</p>
+    <p class="redElement bgBlue">first</p>
+    <p class="redElement bgBlue">first</p>
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ducimus qui totam unde blanditiis.
+        </p>
+    </div>
+    <p class="backgroundimage">ye to mast cheez hai</p>
+    <span>ye element ko target karega</span>
+    <footer>ye bhi same us jaise</footer>
+</body>
+</html>

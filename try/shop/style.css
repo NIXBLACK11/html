@@ -1,0 +1,133 @@
+/* CSS RESET */
+*{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+/* NAVBAR:LOGO ,IMAGE */
+#logo{
+    margin:10px 34px;
+}
+
+#logo img{
+    height:80px;
+    margin:0px 0px;
+    border-radius: 100px;
+}
+
+/* NAVBAR:LIST STYLING */
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.0;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    color:black;
+    display:block;
+    padding: 3px 85px;
+    margin:3px 30px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:white;
+    background-color: black;
+}
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    height:581px;
+    /* padding:3px 200px; */
+    padding:3px 200px 3px 600px;
+    justify-content: center;
+    align-items:center;
+}
+#home::before{
+    content:"";
+    background:url('back.png') no-repeat center center/cover;
+    position:absolute;
+    top:0px;left:0px;
+    height:642px;
+    width:100%;
+    z-index:-1;
+    opacity:0.90;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Allura', cursive;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* S STYLING */
+#alpha1{
+    position:absolute;
+    left:100px;
+    top:100px;
+    display:inline-block;
+    font-size:450px;
+    font-stretch: ultra-expanded;
+    transform: rotate(336deg);
+    color:gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+#alpha2{
+    position:absolute;
+    left:80px;
+    top:105px;
+    display:inline-block;
+    font-size:450px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-stretch: ultra-expanded;
+    transform: rotate(336deg);
+    color: white;
+}
+
+
+/* UTILITY CLASSES */
+.h-primary{
+    font-size: 4rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+}
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--yo comments-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html,html tut,web,hacker">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <!-- This is how you include css -->
+    <link rel="stylesheet" href="first.css">
+    <!-- This is how include javascript -->
+    <script src="first.js"></script>
+    <title>yo</title>
+</head>
+<body>  
+    <h1>hello</h1>
+    <!-- only use one h1 tag for search engine optimisation -->
+    <p>this is first.html</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut vel, ad quia iusto consectetur illo quam at obcaecati <strong>THIS IS STRONG</strong>atque dolorem dolore explicabo, necessitatibus velit fuga tenetur?<em>this is emphasised</em> Recusandae soluta architecto ipsum itaque<br> laboriosam inventore iste totam voluptatem a repellendus.</p>
+    <hr>
+    <!-- link to a site target="_blank opens that in new tab" -->
+    <a href="https://google.com" target="_blank">Go to google</a>
+    <img src="logo.png" alt="cannot load at the moment" >
+    <p>hello</p>
+    <ul type="square">
+        <li>unordered list</li>
+        <li>unordered list</li>
+    </ul>
+    <!-- type="a","i"  any thing can be used -->
+    <ol type="I">
+        <li>ordered list</li>
+        <li>ordered list</li>
+    </ol>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>roll no</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>siddharth</th>
+                <th>61</th>
+            </tr>
+            <tr>
+                <th>mommy</th>
+                <th>1</th>
+            </tr>
+        </tbody>
+    </table>
+    <!-- to give input to backend -->
+    <!-- name attribute specifies by which name the value is stored in te backend -->
+    <form action="first.js" method="get">
+        <label for="name">Name</label>
+        <!-- jaise hi name pe click karenge cursor aa jaega -->
+        <div>
+            Name: <input type="text" name="myName" id="name">
+        </div>
+        <div>
+            Password: <input type="text" name="myPassword">
+        </div>
+        <div>
+            <input type="datetime-local" name="">
+        </div>
+        <div>
+            are you mad:<input type="checkbox" name="">
+        </div>
+        <!-- use same name in radio button to check only one option at a time -->
+        <div>
+            male<input type="radio" name="samename">female<input type="radio" name="samename"></input>
+        </div>
+        <div>
+            aur bata:<textarea name="my text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="my car" id="car">
+                <option value="ind">indica</option>
+                <option value="iswf">swift</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+    </form>
+    <p>this is first</p>
+    <p>this is second</p>
+    <span>this is first</span>
+    <span>this is second</span>
+    <!-- id can be used only once,classes can be repeated in different -->
+    <!-- emmet . for class # for id -->
+    <div id="mainBox" class="redBg blackBr">
+        this is mainbox
+    </div>
+    <!-- html entities available on google -->
+    <p>tht&nbsp;eee   &lt;p&gt;  &pound; &copy; &rAarr; &#8203;</p>
+</body>
+</html>

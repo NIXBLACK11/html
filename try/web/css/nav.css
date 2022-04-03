@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+/*CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* NAVBAR */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+
+/* NAVBAR:LOGO ,IMAGE */
+#logo{
+    margin:10px 34px;
+
+}
+
+#logo img{
+    height:56px;
+    margin:0px 0px;
+}
+/* NAVBAR:LIST STYLING */
+#navbar ul{
+    display:flex;
+    font: bolder;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content:"";
+    background-color:cyan;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    color:rgb(241,75,103);;
+    display:block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+
+/* BODY  */
+body{
+    background-color: black;
+}
+/* section */
+#main{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+
+/* S STYLING */
+#alpha1{
+    position:absolute;
+    left:180px;
+    top:195px;
+    display:inline-block;
+    font-size:400px;
+    font-stretch: ultra-expanded;
+    transform: rotate(336deg);
+    color: cyan;
+    font-family: 'Roboto', sans-serif;
+}
+
+#alpha2{
+    position:absolute;
+    left:205px;
+    top:200px;
+    display:inline-block;
+    font-size:400px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-stretch: ultra-expanded;
+    transform: rotate(336deg);
+    color: rgb(241,75,103);
+}
+
+/* NAME */
+#name{
+    position: absolute;
+    left:750px;
+    top:200px;
+}
+#name h1{
+    color: cyan;
+    font-size: 40px;
+    font-family: 'Fredoka', sans-serif;
+}
